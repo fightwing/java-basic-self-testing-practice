@@ -35,6 +35,9 @@ class CollectionsTest {
         //  No `for` is allowed.
         //
         // <--start
+        while (iterator.hasNext()) {
+            list.add(iterator.next());
+        }
 
         // --end-->
 
@@ -56,12 +59,11 @@ class CollectionsTest {
         iterator.add("Juliet");
         iterator.previous();
         iterator.remove();
-
         // TODO:
         //  Please write your answer directly.
         //
         // <--start
-        final List<String> expected = null;
+        final List<String> expected = new ArrayList<>(Arrays.asList("Amy", "Bob", "Carl"));
         // --end-->
 
         assertIterableEquals(expected, staff);
@@ -81,7 +83,7 @@ class CollectionsTest {
         //  Please write down your answer directly.
         //
         // <--start
-        final List<Integer> expected = null;
+        final List<Integer> expected = new ArrayList<>(Arrays.asList(0, 1, 2, 10, 11));
         // --end-->
 
         assertIterableEquals(expected, integers);
