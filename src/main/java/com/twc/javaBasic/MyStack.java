@@ -1,6 +1,6 @@
 package com.twc.javaBasic;
 
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 
 @SuppressWarnings({"unused", "FieldCanBeLocal"})
@@ -28,7 +28,7 @@ public class MyStack {
         // TODO: Please push the value into the storage here.
         // <--start
         storage[count] = value;
-        System.out.println(storage[count]);
+        //System.out.println(storage[count]);
         count = count + 1;
         // --end-->
     }
