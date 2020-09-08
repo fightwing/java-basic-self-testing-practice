@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 @SuppressWarnings({"unused", "FieldCanBeLocal"})
 public class MyStack {
     private int[] storage;
@@ -24,10 +27,12 @@ public class MyStack {
 
         // TODO: Please push the value into the storage here.
         // <--start
-
+        storage[count] = value;
+        System.out.println(storage[count]);
+        count = count + 1;
         // --end-->
     }
-
+//68+37
     private void ensureCapacity() {
         int newCapacity = capacity * GROW_FACTOR;
 
@@ -37,6 +42,10 @@ public class MyStack {
         //  IMPORTANT: You SHOULD NOT USE COLLECTIONS (such as List<T>) OTHER THAN ARRAY.
         //
         // <--start
+        capacity = newCapacity;
+        storage = Arrays.copyOf(storage, newCapacity);
+
+
 
         // --end-->
     }
@@ -57,9 +66,10 @@ public class MyStack {
         //  Please pop one element from the array. You should update the `count` field
         //  as well.
         // <--start
+        count = count -1;
+        return storage[count];
 
         // --end-->
-
-        throw new UnsupportedOperationException("Stack is empty.");
+        //throw new UnsupportedOperationException("Stack is empty.");
     }
 }

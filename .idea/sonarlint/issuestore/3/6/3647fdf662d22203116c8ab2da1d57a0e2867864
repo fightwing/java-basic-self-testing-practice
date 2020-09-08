@@ -1,0 +1,16 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îõÇŸşÿÿÿÿ
+B
+java:S1172",Remove this unused method parameter "value".(ä¶–¿
+M
+java:S1135"2Complete the task associated to this TODO comment.(¯şİşÿÿÿÿ
+Z
+java:S1854 "?Remove this useless assignment to local variable "newCapacity".(äûúƒÿÿÿÿÿ
+H
+java:S1135""2Complete the task associated to this TODO comment.(ÓñàÍ
+H
+java:S11358"2Complete the task associated to this TODO comment.(ÓñàÍ
+K
+java:S1481 "0Remove this unused "newCapacity" local variable.(äûúƒÿÿÿÿÿ
+F
+java:S1068"+Remove this unused "storage" private field.(Ùı…¯üÿÿÿÿ
